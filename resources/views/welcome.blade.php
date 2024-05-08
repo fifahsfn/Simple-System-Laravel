@@ -168,5 +168,11 @@
                 </div>
             </div>
         </div>
+        <div class="container" style="margin-top:100px;">
+            <script>
+                // Redirect to the index page
+                window.location.href = "{{ route('products.index') }}";
+            </script>
+        </div>
     </body>
 </html>
