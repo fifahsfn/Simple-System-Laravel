@@ -23,7 +23,7 @@
             <div class="col-md-6 ">
                 <input type="text" name="search" class="form-control" placeholder="Search by name or description">
             </div>
-            <div class="col-md-6 text-right"> <!-- Adjusted this column to be right-aligned -->
+            <div class="col-md-6 text-right">
                 <button type="submit" class="btn btn-primary">Search</button>
             </div>
         </div>
@@ -42,8 +42,8 @@
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $product->name }}</td>
-            <td>{{ $product->amount }}</td>
-            <td>{{ $product->description }}</td>
+            <td>{{ $product->price }}</td>
+            <td>{{ $product->detail }}</td>
             <td>{{ $product->publish }}</td>
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
