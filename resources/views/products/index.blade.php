@@ -42,8 +42,8 @@
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $product->name }}</td>
-            <td>{{ $product->price }}</td>
-            <td>{{ $product->detail }}</td>
+            <td>{{ $product->amount }}</td>
+            <td>{{ $product->description }}</td>
             <td>{{ $product->publish }}</td>
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
